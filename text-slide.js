@@ -1,10 +1,10 @@
 /* global $ o2 MessageLayer KeySpline Tag */
 (function() {
 	MessageLayer.textCustomizers.slideTextCustomizer = function(textLayer, oldTexts, newTexts) {
-		var offsetX       = 'textSlideOffsetX'      in textLayer ? textLayer.textSlideOffsetX     : 0,
-			offsetY       = 'textSlideOffsetY'      in textLayer ? textLayer.textSlideOffsetY     : 20,
-			slideDuration = 'textSlideDuration'     in textLayer ? textLayer.textSlideDuration    : 700,
-			fadeDuration  = 'textSlideFadeDuration' in textLayer ? textLayer.textSlideFadeDuration: 350,
+		var offsetX       = 'textSlideOffsetX'      in textLayer ? textLayer.textSlideOffsetX      : 0,
+			offsetY       = 'textSlideOffsetY'      in textLayer ? textLayer.textSlideOffsetY      : 20,
+			slideDuration = 'textSlideDuration'     in textLayer ? textLayer.textSlideDuration     : 700,
+			fadeDuration  = 'textSlideFadeDuration' in textLayer ? textLayer.textSlideFadeDuration : 350,
 			fadeDelay     = textLayer.delaySpeed,
 			ended         = false;
 
